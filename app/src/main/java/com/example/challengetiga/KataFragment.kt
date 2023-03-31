@@ -67,10 +67,4 @@ class KataFragment : Fragment() {
         }
     }
 
-    private fun setCurrentFragment(fragment: Fragment): FragmentTransaction =
-        parentFragmentManager.beginTransaction().apply {
-            replace(R.id.fr_container, fragment)
-            commit()
-        }
-
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.challengetiga.databinding.ItemHurufBinding
 
@@ -20,21 +21,12 @@ class ListAdapterHuruf (private  var hurufList : ArrayList<HurufList>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val viewHuruf = hurufList[position].huruf
         holder.binding.tvHuruf.text = viewHuruf
-        holder.itemView.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(pO: View?) {
-                val transaction = pO?.context as AppCompatActivity
-
-                val bundle = Bundle()
+//
+        holder.itemView.setOnClickListener {
+            val bundle = Bundle()
                 bundle.putString("Huruf", viewHuruf)
-
-                val kataFragment = KataFragment()
-                kataFragment.arguments = bundle
-                transaction.supportFragmentManager.beginTransaction()
-                    .replace(R.id.fr_container, kataFragment)
-                    .addToBackStack(null)
-                    .commit()
-            }
-        })
+                Navigation.findNavController(it).navigate(R.id.action_hurufFragment_to_kataFragment,bundle)
+        }
     }
 
     override fun getItemCount(): Int {

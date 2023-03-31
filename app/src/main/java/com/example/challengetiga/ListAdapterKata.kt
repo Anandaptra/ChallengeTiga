@@ -2,10 +2,12 @@ package com.example.challengetiga
 
 import android.content.Intent
 import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.challengetiga.databinding.ItemHurufBinding
 
@@ -20,16 +22,12 @@ class ListAdapterKata (private val listKata : ArrayList<KataList>) : RecyclerVie
     override fun onBindViewHolder(holder: ListAdapterKata.ViewHolder, position: Int) {
         val viewKata = listKata[position].kata
         holder.binding.tvHuruf.text = viewKata
-        holder.itemView.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                val transaction = p0?.context as AppCompatActivity
 
-                val web = Intent(Intent.ACTION_VIEW)
-                web.data = Uri.parse("https://www.google.com/search?q= $viewKata")
-                transaction.startActivity(web)
-            }
-
-        })
+        holder.itemView.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("Huruf", viewKata)
+            Navigation.findNavController(it).navigate(R.id.action_kataFragment_to_hurufFragment,bundle)
+        }
     }
 
     override fun getItemCount(): Int {
