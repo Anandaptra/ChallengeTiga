@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.challengetiga.databinding.FragmentHurufBinding
@@ -32,6 +33,7 @@ class KataFragment : Fragment() {
 
         return binding.root
     }
+
 
     private fun getKata() : ArrayList<KataList> {
         val argument = this.arguments
@@ -60,10 +62,8 @@ class KataFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val gambar = binding.imgBack
-        val kembali = HurufFragment()
-        gambar.setOnClickListener {
-            setCurrentFragment(kembali)
+        binding.imgBack.setOnClickListener {
+            findNavController().navigate(R.id.action_kataFragment_to_hurufFragment)
         }
     }
 
