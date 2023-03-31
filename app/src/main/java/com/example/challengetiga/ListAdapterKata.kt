@@ -22,12 +22,16 @@ class ListAdapterKata (private val listKata : ArrayList<KataList>) : RecyclerVie
     override fun onBindViewHolder(holder: ListAdapterKata.ViewHolder, position: Int) {
         val viewKata = listKata[position].kata
         holder.binding.tvHuruf.text = viewKata
+        holder.itemView.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                val transaction = p0?.context as AppCompatActivity
 
-        holder.itemView.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("Huruf", viewKata)
-            Navigation.findNavController(it).navigate(R.id.action_kataFragment_to_hurufFragment,bundle)
-        }
+                val web = Intent(Intent.ACTION_VIEW)
+                web.data = Uri.parse("https://www.google.com/search?q= $viewKata")
+                transaction.startActivity(web)
+            }
+
+        })
     }
 
     override fun getItemCount(): Int {
