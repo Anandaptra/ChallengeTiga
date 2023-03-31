@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">ChallengeTiga</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="words">Words</string>
+    <string name="huruf_abjad">Huruf Abjad</string>
+    <string name="words_that_start_with">Words That Start With</string>
+
+    <string-array name="abjad">
+        <item>A</item><item>B</item><item>C</item><item>D</item>
+        <item>E</item><item>F</item><item>G</item><item>H</item>
+        <item>I</item><item>J</item><item>K</item><item>L</item>
+        <item>M</item><item>N</item><item>O</item><item>P</item>
+        <item>Q</item><item>R</item><item>S</item><item>T</item>
+        <item>U</item><item>V</item><item>W</item><item>X</item>
+        <item>Y</item><item>Z</item>
+    </string-array>
+
+    <string-array name="kata">
+        <item>ANGSA</item><item>API</item><item>AMBON</item><item>AKSARA</item><item>ALERT</item>
+
+        <item>BIMA</item><item>BUAYA</item><item>BACA</item><item>BERKUDA</item><item>BISMILLAH</item>
+
+        <item>CATAPULT</item><item>CITY</item><item>COMMENT</item><item>CONTACT</item><item>COPYRIGHT</item>
+
+        <item>DADU</item><item>DUKU</item><item>DURIAN</item><item>DOMBA</item><item>DASI</item>
+
+        <item>ELANG</item><item>EMAS</item><item>ENCER</item><item>ENDAP</item><item>ENAK</item>
+
+        <item>FANA</item><item>FAUNA</item><item>FLORA</item><item>FAST</item><item>FOOD</item>
+
+        <item>GURUN</item><item>GAJAH</item><item>GUCI</item><item>GENTENG</item><item>GAS</item>
+
+        <item>HARIMAU</item><item>HINDIA</item><item>HOPE</item><item>HIJAU</item><item>HUJAN</item>
+
+        <item>ILANG</item><item>INDUK</item><item>IBU</item><item>ISTRI</item><item>INDAH</item>
+
+        <item>JAMBU</item><item>JINGGA</item><item>JUS MANGGA</item><item>JUS APEL</item><item>JUS DURIAN</item>
+
+        <item>KAKI</item><item>KAOS</item><item>KUNYIT</item><item>KEMBANG</item><item>KELELAWAR</item>
+
+        <item>LAMPU</item><item>LILIN</item><item>LESU</item><item>LAPAR</item><item>LEWAT</item>
+
+        <item>MAMA</item><item>MASAK</item><item>MULUT</item><item>MAWAR</item><item>MELATI</item>
+
+        <item>NASI UDUK</item><item>NASI GORENG</item><item>NASI TUMPENG</item><item>NASI MERAH</item><item>NASI KUNING</item>
+
+        <item>OMBAK</item><item>OJEK</item><item>OBENG</item><item>OLI</item><item>OBOR</item>
+
+        <item>PANCI</item><item>PANTAI</item><item>PALU</item><item>PISANG</item><item>PALEM</item>
+
+        <item>QATAR</item><item>QARIAH</item><item>QASAR</item><item>QIRAAH</item><item>QIRAAT</item>
+
+        <item>RAK</item><item>RAMBUT</item><item>RAJA</item><item>RAMBUTAN</item><item>RAS</item>
+
+        <item>SAPI</item><item>SUSU</item><item>SOP</item><item>SELEDRI</item><item>SUPIR</item>
+
+        <item>TANGAN</item><item>TAPIR</item><item>TULI</item><item>TEGANGAN</item><item>TAS</item>
+
+        <item>UANG</item><item>UAP</item><item>UBI</item><item>ULAR</item><item>UTANG</item>
+
+        <item>VAS</item><item>VISA</item><item>VAKSIN</item><item>VAKUM</item><item>VALENTINE</item>
+
+        <item>WUDHU</item><item>WAISAK</item><item>WADAH</item><item>WADUK</item><item>WAFAK</item>
+
+        <item>XENIA</item><item>XENON</item><item>XAVIER</item><item>XEROFIT</item><item>XOXO</item>
+
+        <item>YOUTUBE</item><item>TAKULT</item><item>YAHOO</item><item>YAMAHA</item><item>YOGYAKARTA</item>
+
+        <item>ZEBRA</item><item>ZIMBABWE</item><item>ZOOM</item><item>ZALORA</item><item>ZODIAK</item>
+
+    </string-array>
+</resources>
