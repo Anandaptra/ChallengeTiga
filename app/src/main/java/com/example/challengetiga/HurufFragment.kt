@@ -13,6 +13,7 @@ class HurufFragment : Fragment() {
     val list = ArrayList<HurufList>()
     lateinit var binding: FragmentHurufBinding
     lateinit var rchuruf : RecyclerView
+    //latevar
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
